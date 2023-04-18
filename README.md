@@ -7,5 +7,4 @@ This is a Signin Page for an Android application using React Native.
 ![Screenshot (7)](https://user-images.githubusercontent.com/76946978/232725319-ac06e7e9-f763-4da6-b766-ab7e1b74872f.png)
 
 ## Details
-•	Tech Stack used: React Native
-•	Page is responsive so it looks good on desktop and Mobile.
+•	Tech Stack used: React Native.
