@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, Button, TextInput, Text } from 'react-native';
+import { View, StyleSheet, Button, TextInput, Text, Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
@@ -22,9 +22,7 @@ export const Login = ({navigation}) => {
     const [password,setPassword]=useState("")
     
     const submit=()=>{
-        if(username==="" && password===""){
-            alert("Enter username and password first")
-        }
+        
         // return Alert.alert(username, password)
         fetch("https://dev-api.qwikxr.com/api/v1/auth/get-token/", {
             method:"POST",
@@ -39,11 +37,14 @@ export const Login = ({navigation}) => {
             if(response.token){
                 navigation.navigate("Profile")
             }
+            Alert.alert("Thank you")
             console.log(response);
-        }).catch((error)=>{
-            alert(error.error)
-            }
+        }).catch((e)=>{
+            console.log(error)
+        }
         )
+        
+       
         
     }
   return (
