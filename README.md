@@ -1,4 +1,4 @@
-# BioMetric Authentication Assignment
+# React Native Authentication Assignment
 This is a Signin Page for an Android application using React Native. 
 
 ## Screenshots
